@@ -6,6 +6,6 @@ RUN \
  apt-get update && \
  apt-get install -y vso 
 ENV group
-CMD vso start --help -r ${group}
+CMD vso start -r ${group}
 WORKDIR /codespace
 VOLUME /CODESPACE
