@@ -6,6 +6,6 @@ RUN \
  apt-get update && \
  apt-get install -y vso 
 ENV plan=value
-CMD vso start -p ${plan} -v
+CMD vso start
 WORKDIR /codespace
 VOLUME /CODESPACE
