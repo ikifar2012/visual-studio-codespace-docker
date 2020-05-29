@@ -1,10 +1,10 @@
 FROM ubuntu:bionic
 RUN \
- apt install curl && \
+ apt-get update && apt-get install -y curl && \
  curl https://packages.microsoft.com/keys/microsoft.asc |  apt-key add - && \
  add-apt-repository https://packages.microsoft.com/ubuntu/18.04/prod/ && \
  apt-get update && \
- apt-get install vso 
+ apt-get install -y vso 
 CMD vso start --help
 WORKDIR /codespace
 VOLUME /CODESPACE
