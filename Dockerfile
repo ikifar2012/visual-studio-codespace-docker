@@ -5,6 +5,7 @@ RUN \
  add-apt-repository https://packages.microsoft.com/ubuntu/18.04/prod/ && \
  apt-get update && \
  apt-get install -y vso 
-CMD vso start
+ENV plan=value
+CMD vso start -p ${plan} -v
 WORKDIR /codespace
 VOLUME /CODESPACE
