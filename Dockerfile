@@ -1,5 +1,6 @@
 FROM ubuntu:bionic
 RUN \
+ apt install curl && \
  curl https://packages.microsoft.com/keys/microsoft.asc |  apt-key add - && \
  add-apt-repository https://packages.microsoft.com/ubuntu/18.04/prod/ && \
  apt-get update && \
