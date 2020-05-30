@@ -1,0 +1,10 @@
+  version: '3'
+  services:
+    vscodespace:
+      image: ikifar/visual-studio-codespace-docker
+      environment:
+        - plan=yourplan
+      volumes:
+        - /1tbhdd/codespace/data:/codespace
+      stdin_open: true
+      tty: true
