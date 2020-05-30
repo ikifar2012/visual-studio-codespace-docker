@@ -6,6 +6,6 @@ RUN \
  apt-get update && \
  apt-get install -y vso 
 ENV plan=value
-CMD vso start -v
+ENTRYPOINT [ "vso", "start" ] 
 WORKDIR /codespace
 VOLUME /CODESPACE
