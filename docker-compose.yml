@@ -5,6 +5,6 @@
       environment:
         - plan=yourplan
       volumes:
-        - /1tbhdd/codespace/data:/codespace
+        - ~/codespace/data:/codespace
       stdin_open: true
       tty: true
